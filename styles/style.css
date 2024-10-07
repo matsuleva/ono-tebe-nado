@@ -1,1 +1,258 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  align-items: center;
+  margin: 92px auto 96px;
+}
+
+.header__links-list {
+  display: flex;
+  list-style-type: circle;
+  font-size: 18px;
+  column-gap: 34px;
+  margin-left: 50px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__address {
+  justify-self: right;
+  margin-right: 86px;
+}
+
+/* cover section */
+
+.cover {
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 160px 50px 51px;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.cover__title {
+  display: grid;
+  grid-template-columns: 24% 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  row-gap: 7px;
+  letter-spacing: 0.3em;
+  position: relative;
+  z-index: 2;
+}
+
+.cover__title span:nth-of-type(3) {
+  grid-column: 2;
+  grid-row: 2;
+  margin-left: 47px;
+}
+
+.cover__title span:nth-of-type(4) {
+  grid-column: 3;
+  grid-row: 2;
+  margin-left: 30px;
+}
+
+.cover__title span:nth-of-type(5) {
+  grid-column: 3;
+  grid-row: 3;
+  margin-left: 18px;
+}
+
+.letter-spacing-extended {
+  margin-left: 31px;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 127px;
+  margin-left: 28px;
+  column-gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.cover__description-text {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.27;
+  word-spacing: 19px;
+}
+
+.bet-button {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+/* lots section */
+
+.lots {
+  margin: 180px 24px 0;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  list-style-type: none;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card {
+  padding: 51px 40px 48px;
+  min-height: 563px;
+  height: 100%;
+  position: relative;
+}
+
+.card__image {
+  position: absolute;
+  object-fit: cover;
+  inset: 0;
+  height: 100%;
+}
+
+.card__content {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__title {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.card__text {
+  font-size: 20px;
+  color: #fff;
+}
+
+.lots__look-more-link {
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+/* about */
+
+.about {
+  display: grid;
+  grid-template-rows: 240px 1fr;
+  grid-auto-columns: 240px 1fr;
+  grid-template-areas:
+    "about__logo about__title"
+    ". about__text";
+  column-gap: 72px;
+  margin: 141px 33px 0 24px;
+  padding-top: 37px;
+  padding-left: 47px;
+}
+
+.about__logo {
+  background-color: #000;
+  border-radius: 50%;
+  grid-area: about__logo;
+  padding: 63px 46px;
+  width: 100%;
+}
+
+.about__title {
+  grid-area: about__title;
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.about__text {
+  grid-area: about__text;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+/* footer */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 180px 50px 88px;
+}
+
+.address {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 48px;
+  list-style-type: none;
+  justify-content: flex-end;
+}
